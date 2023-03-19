@@ -40,13 +40,13 @@ function res()
 {
     if(small.matches)
     {
-        document.querySelector("footer img").src = "foto/general/footer/footerSmall.jpg"
+        document.querySelector("footer img").src = "./assets/foto/general/footer/footerSmall.jpg"
         document.querySelector("map").innerHTML = "";
 
     }
     else
     {
-        document.querySelector("footer img").src = "foto/general/footer/footerBig.jpg"
+        document.querySelector("footer img").src = "./assets/foto/general/footer/footerBig.jpg"
         document.querySelector("map").innerHTML = "<area shape=\"rect\" coords=\"330,25,503,77\" alt=\"Daikin\" href=\"www.daikin.pl/pl_pl/customers.html\" /> <area shape=\"rect\" coords=\"548,26,737,80\" alt=\"Gree\" href=\"https://gree.pl/\" /> <area shape=\"rect\" coords=\"781,19,1011,85\" alt=\"Fuji Elecric\" href=\"http://fujielectric.eu/\" /> <area shape=\"rect\" coords=\"1026,24,1161,169\" alt=\"Rotenso\" href=\"https://rotenso.com/pl/\" /> <area shape=\"rect\" coords=\"291,99,496,151\" alt=\"Toshiba\" href=\"https://www.toshiba.pl/\" /> <area shape=\"rect\" coords=\"514,92,661,163\" alt=\"Midea\" href=\"https:zymetric.pl/\" /> <area shape=\"rect\" coords=\"696,91,823,164\" alt=\"LG\" href=\"https://www.lg.com/pl\" /> <area shape=\"rect\" coords=\"840,92,1022,162\" alt=\"Pro-Vent\" href=\"https://www.pro-vent.pl/\" />"
     }
 
@@ -76,7 +76,7 @@ function ZmienSlajd()
     {
         numer = 1;
     }
-    plik = "<img src=\"foto/slider/"+numer+".jpg\">"
+    plik = "<img src=\"./assets/foto/slider/"+numer+".jpg\">"
     document.getElementById("slider").innerHTML = plik;
     $("#slider").fadeIn(500);
     timer1 = setTimeout("ZmienSlajd()", 5000);
